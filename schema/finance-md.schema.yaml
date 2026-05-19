@@ -1,0 +1,79 @@
+# FINANCE.md Schema v0.1 (draft)
+# JSON Schema (YAML representation) for FINANCE.md front matter validation.
+# Everything beyond the YAML — conventions, rationale, glossary expansion —
+# lives in the Markdown body and is not modelled here.
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://github.com/layerzlabs/finance-md/schema/finance-md.schema.yaml"
+title: FINANCE.md
+description: Schema for the FINANCE.md financial conventions front matter (spec v0.1 draft)
+type: object
+additionalProperties: false
+
+required:
+  - finance_md
+  - model_name
+  - currency
+
+properties:
+  finance_md:
+    type: string
+    enum: ["0.1"]
+    description: Spec version
+
+  model_name:
+    type: string
+    minLength: 1
+    description: Name of the model, deal, entity, or project these conventions govern.
+
+  currency:
+    type: string
+    pattern: "^[A-Z]{3}$"
+    description: Primary reporting currency, ISO 4217 (EUR, USD, GBP…).
+
+  secondary_units:
+    type: array
+    items:
+      type: string
+      minLength: 1
+    description: >
+      Non-monetary units relevant to this model (tonnes, SKU, MW, kWh, tokens,
+      users, seats, …). Free-form list — tools must not impose an enum.
+
+  language:
+    type: string
+    pattern: "^[a-z]{2}$"
+    description: ISO 639-1 code of the model's working language.
+
+  owners:
+    type: array
+    items:
+      type: string
+      minLength: 1
+    description: Free-form list of people responsible for these conventions (emails, names, roles).
+
+  sources:
+    type: array
+    items:
+      type: string
+      minLength: 1
+    description: >
+      Free-form list of upstream systems feeding the model (netsuite, salesforce,
+      manual_excel, bank_feeds, pennylane…). Tools must not impose an enum.
+
+  glossary:
+    type: object
+    description: >
+      Map of company-specific or redefined terms to their one-line definition.
+      Agents apply these definitions in preference to generic financial ones.
+    additionalProperties:
+      type: string
+      minLength: 1
+
+  inherits_from:
+    type: [string, "null"]
+    description: Path or URL to a parent FINANCE.md (sector or organization-wide template).
+
+  model_id:
+    type: string
+    description: Tool-specific identifier (set automatically when a tool generates the file from a model).
