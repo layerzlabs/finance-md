@@ -4,6 +4,8 @@
 
 Like `CLAUDE.md` encodes a project's conventions for Claude, like `AGENTS.md` encodes agent capabilities — `FINANCE.md` encodes an organization's financial conventions for any agent or tool that models.
 
+📄 [Read the standard on the web](https://app.layerz.cc/finance-md) · 📖 [Why it exists](https://app.layerz.cc/blog/finance-md-standard)
+
 ---
 
 ## The problem
@@ -156,6 +158,21 @@ This repository is a **0.1 draft**. The format is being explored in the open: fi
 - [ ] Validator CLI (`npx finance-md validate`)
 - [ ] Convention linter (validate agent outputs against FINANCE.md)
 - [ ] Translations / locale-specific conventions
+
+---
+
+## Where this fits
+
+`FINANCE.md` is one of a small family of open entry points to [Layerz](https://app.layerz.cc):
+
+| Project | Role |
+|---------|------|
+| **`finance-md`** (you are here) | The **standard**: how an organization encodes its financial conventions for any agent |
+| [`cookbook`](https://github.com/layerzlabs/cookbook) | The **recipes**: prompts and patterns for doing financial work with AI agents |
+| [Layerz MCP](https://app.layerz.cc/for-agents) | The **tool**: how an agent drives Layerz to build structured, versioned models |
+| [`slides-for-claude`](https://github.com/layerzlabs/slides-for-claude) | The **presentations**: turn a model or a topic into a self-contained HTML deck |
+
+The standard tells an agent *what your numbers mean*. The tool gives it *a place to build that does not drift*. The cookbook shows *what to ask for in the first place*.
 
 ---
 
