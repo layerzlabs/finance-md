@@ -22,6 +22,19 @@ monthly budget refreshed quarterly, presented to the bank under covenants.
 This file governs the FY2026 budget. Restatements vs. prior years are tracked
 in the model's `actuals` Layer, not here.
 
+## Statement structure
+
+P&L          Revenue by warehouse → purchases → marge brute commerciale →
+             logistics → payroll → other opex → EBITDA
+Cash flow    EBITDA → working capital (inventory, receivables, payables) →
+             capex → net cash
+Balance      Net income feeds retained earnings.
+             Closing cash ties back to the cash flow statement and feeds the
+             covenant headroom calculation.
+
+Marge brute commerciale stops at purchases (see glossary). Logistics sits
+below it, which is why the P&L has no line called gross profit.
+
 ## Units & sign convention
 
 All amounts in **thousands EUR**. Costs are **positive** in the P&L

@@ -24,6 +24,20 @@ Toll road concession (motorway operator). Concession term: 35 years total,
 debt and mezzanine layers, RPI-indexed revenue, and a regulated maintenance
 schedule. IFRS reporting.
 
+## Statement structure
+
+P&L          Toll revenue (traffic × RPI-indexed tariff) → opex → maintenance
+             provision → EBITDA → D&A → senior + mezz interest → PBT → tax
+Cash flow    EBITDA → working capital → maintenance capex → debt service
+             (senior, then mezz) → reserve account movements → free cash
+Balance      Net income feeds retained earnings.
+             Closing cash ties back to the cash flow statement, split between
+             operating cash and the restricted reserve accounts.
+
+Concession intangible amortises over the remaining 18.4 years, not over asset
+life. The maintenance provision is a balance sheet stock fed by the P&L charge
+and released against actual spend in the cash flow.
+
 ## Units & sign convention
 
 All amounts in **millions EUR**. Costs are **positive** in the P&L. Traffic

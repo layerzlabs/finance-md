@@ -21,6 +21,19 @@ SPV + OpCo. IFRS reporting required by lenders. Budget rate for the P&L is
 locked at signing. Single currency (EUR) — pan-European target with marginal
 exposure to GBP and PLN, hedged via 12m forwards.
 
+## Statement structure
+
+P&L          Revenue → gross margin → opex → EBITDA → D&A → interest by
+             tranche (senior A/B, mezzanine, PIK) → PBT → tax → net income
+Cash flow    EBITDA → working capital → capex → cash interest → mandatory
+             amortisation → cash sweep → closing cash
+Balance      Net income feeds retained earnings. PIK accrues to the debt
+             balance rather than through cash. Closing cash ties back to the
+             cash flow statement and feeds the net debt bridge.
+
+Returns sit below the three statements: exit equity value → IRR and MoM by
+tranche. They are outputs, not a fourth statement.
+
 ## Units & sign convention
 
 All amounts in **millions EUR**. Costs are **positive** in the P&L.

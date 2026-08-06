@@ -15,7 +15,17 @@ currency: EUR
 
 ## Context
 
-[What does this entity do? What is this model for? Who uses it?]
+[What does this entity do? What is this model for? Who uses it, and by when?]
+
+## Statement structure
+
+[The sections and key line items of each statement, and how they connect.
+Replace the example below with yours. Delete the statements the model does not have.]
+
+  P&L          [Revenue driver → gross margin → opex → EBITDA]
+  Cash flow    [EBITDA → working capital → capex → net cash]
+  Balance      [Net income feeds retained earnings.
+                Closing cash ties back to the cash flow statement.]
 
 ## Units & sign convention
 
@@ -26,6 +36,10 @@ in one short paragraph with a worked example if there is any ambiguity.]
 
 [For recurring models: when do books close, who validates, what's the cadence.
 Omit for one-off / deal models.]
+
+<!-- Everything below is an accounting policy. Keep a section only if this model
+     actually has that policy. Delete the rest — an empty heading reads as a
+     deliberate convention. -->
 
 ## EBITDA
 
