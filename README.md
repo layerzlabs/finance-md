@@ -4,7 +4,7 @@
 
 Like `CLAUDE.md` encodes a project's conventions for Claude, like `AGENTS.md` encodes agent capabilities — `FINANCE.md` encodes an organization's financial conventions for any agent or tool that models.
 
-📄 [Read the standard on the web](https://app.layerz.cc/finance-md) · 📖 [Why it exists](https://app.layerz.cc/blog/finance-md-standard)
+📄 [Read the standard on the web](https://layerz.cc/finance-md) · 📖 [Why it exists](https://layerz.cc/blog/finance-md-standard)
 
 ---
 
@@ -25,7 +25,9 @@ This context lives in your head, gets pasted into prompts, and evaporates betwee
 A `FINANCE.md` file is a short YAML front matter block (machine-readable) followed by a free-prose Markdown body (human-readable). It encodes:
 
 - **Metadata** in the front matter: model name, currency, language, sources, owners, glossary — the small set of facts an agent needs at a glance.
-- **Conventions and rationale** in the body: how EBITDA is defined, what's in net debt, how working capital is measured, *and why*.
+- **What the model is for** in the body: what it produces, for whom, by when. An agent building a lender-facing budget behaves differently from one filling in a template.
+- **How the statements are built**: the sections and key lines of the P&L, cash flow and balance sheet, and how they connect — net income into retained earnings, closing cash back to the cash flow. This is what stops an agent from inventing a structure nobody asked for.
+- **Conventions and rationale**: units, sign, closing calendar, and any accounting policy the model actually has (EBITDA basis, net debt perimeter, working capital), *and why*.
 
 It is not:
 - A generic modeling playbook (that's your cookbook)
@@ -169,7 +171,7 @@ This repository is a **0.1 draft**. The format is being explored in the open: fi
 |---------|------|
 | **`finance-md`** (you are here) | The **standard**: how an organization encodes its financial conventions for any agent |
 | [`cookbook`](https://github.com/layerzlabs/cookbook) | The **recipes**: prompts and patterns for doing financial work with AI agents |
-| [Layerz MCP](https://app.layerz.cc/for-agents) | The **tool**: how an agent drives Layerz to build structured, versioned models |
+| [Layerz MCP](https://layerz.cc/for-agents) | The **tool**: how an agent drives Layerz to build structured, versioned models |
 | [`slides-for-claude`](https://github.com/layerzlabs/slides-for-claude) | The **presentations**: turn a model or a topic into a self-contained HTML deck |
 
 The standard tells an agent *what your numbers mean*. The tool gives it *a place to build that does not drift*. The cookbook shows *what to ask for in the first place*.

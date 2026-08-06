@@ -23,6 +23,20 @@ US HoldCo + France OpCo. Internal management reporting in USD;
 local statutory accounts kept under US GAAP (HoldCo) and French GAAP (OpCo).
 This file governs the FP&A monthly close.
 
+## Statement structure
+
+P&L          ARR bridge (new, expansion, contraction, churn) → recognised
+             revenue → COGS → gross margin → S&M / R&D / G&A → EBITDA
+Cash flow    EBITDA → deferred revenue movement → other working capital →
+             capex → net cash
+Balance      Net income feeds retained earnings. Deferred revenue is the
+             balance sheet counterpart of the recognition timing difference.
+             Closing cash ties back to the cash flow statement.
+
+The ARR bridge drives recognised revenue; it is not itself a P&L line. Cash
+collection leads recognition on annual prepay contracts, which is why the
+deferred revenue movement is explicit in the cash flow.
+
 ## Units & sign convention
 
 All amounts in **thousands USD**. Costs are **positive** in the P&L.

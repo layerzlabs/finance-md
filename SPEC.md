@@ -55,16 +55,29 @@ The body is **free prose**. No section is mandatory. Suggested headings, in roug
 ```markdown
 ## Context
 
-What this entity does, what this model is for, who uses it.
+What this entity does, what this model is for, who uses it, by when.
+An agent that knows it is building a lender-facing budget behaves
+differently from one filling in a template.
 
-## Closing calendar
+## Statement structure
 
-When books close, review cadence, who validates actuals.
+The sections and key line items of the P&L, the cash flow and the balance
+sheet — and how they connect. This is what stops an agent from inventing a
+structure nobody asked for.
+
+  P&L          Revenue by warehouse → gross margin → opex → EBITDA
+  Cash flow    EBITDA → working capital → capex → net cash
+  Balance      Net income feeds retained earnings.
+               Closing cash ties back to the cash flow statement.
 
 ## Units & sign convention
 
 If the model uses `thousands` or another denomination implicitly, state it.
 If costs are positive in the P&L, state it. One worked example beats five rules.
+
+## Closing calendar
+
+When books close, review cadence, who validates actuals.
 
 ## EBITDA
 
@@ -91,7 +104,9 @@ Rate(s), basis (statutory / effective / cash), deferred treatment.
 Prose expansion of glossary terms that need more than one line.
 ```
 
-Use only the sections that apply. A budget model probably has no Net Debt section. A SaaS FP&A model probably has no Tax section beyond a one-liner.
+The first three carry most of the value, and in this order: **what the model is for**, **how its statements are built**, **how to read a number** (units and sign). An agent that has those three can work. Everything below them is an accounting policy, and accounting policies are worth writing only when the model actually has them.
+
+Use only the sections that apply. A budget model probably has no Net Debt section. A SaaS FP&A model probably has no Tax section beyond a one-liner. A file that carries all nine headings because the template did is noise an agent has to wade through, and it ages badly: an empty convention reads as a deliberate one.
 
 ---
 
