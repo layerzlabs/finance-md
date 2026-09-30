@@ -120,7 +120,7 @@ Always read and apply FINANCE.md before any financial modeling task.
 
 ### MCP servers
 
-Any MCP server can expose a `read_conventions` tool that returns the FINANCE.md for a given model. Layerz, for example, ships three tools (`layerz_get_finance_md`, `layerz_set_finance_md`, `layerz_generate_finance_md`) that let an agent push its local `FINANCE.md` into a Layerz model at session start, then operate under those conventions.
+Any MCP server can expose a `read_conventions` tool that returns the FINANCE.md for a given model. Layerz, for example, returns a model's FINANCE.md through `layerz_get_conventions` and replaces it through `layerz_set_finance_md`, so an agent can push its local `FINANCE.md` into a Layerz model at session start, then operate under those conventions.
 
 ---
 
